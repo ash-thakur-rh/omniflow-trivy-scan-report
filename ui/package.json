@@ -10,14 +10,14 @@
   "dependencies": {
     "@agnistack/omniflow-ui": "0.1.4",
     "next": "16.2.6",
-    "react": "19.2.6",
+    "react": "19.2.7",
     "react-dom": "19.2.6",
     "recharts": "3.8.1",
     "swr": "2.3.3"
   },
   "devDependencies": {
     "@types/node": "22.15.29",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.16",
     "@types/react-dom": "19.2.3",
     "autoprefixer": "10.4.21",
     "eslint": "9.39.4",
@@ -27,7 +27,7 @@
     "typescript": "5.8.3"
   },
   "overrides": {
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.16",
     "@types/react-dom": "19.2.3",
     "next": "$next",
     "postcss": "8.5.14"
