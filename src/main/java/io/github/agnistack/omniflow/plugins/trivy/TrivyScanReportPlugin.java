@@ -48,7 +48,7 @@ import java.util.List;
  * Ingest endpoint:
  *
  * <pre>
- *   POST http://localhost:8080/api/ingest/trivy-scan-report
+ *   POST http://localhost:8080/api/v1/ingest/trivy-scan-report
  *   Content-Type: application/json
  *   Body: (Trivy JSON report)
  * </pre>
