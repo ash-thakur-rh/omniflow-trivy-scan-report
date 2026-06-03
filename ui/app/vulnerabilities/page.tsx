@@ -260,7 +260,11 @@ function Vulnerabilities() {
 function VulnerabilitiesContent() {
   const { filter: f } = useFilter();
   return (
-    <ScansProvider filter={{ limit: Number(f.limit) || 50 }}>
+    <ScansProvider filter={{
+      projectName: f.projectName || undefined,
+      status:      f.status      || undefined,
+      limit:       Number(f.limit) || 50,
+    }}>
       <Vulnerabilities />
     </ScansProvider>
   );

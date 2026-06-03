@@ -194,6 +194,7 @@ class TrivyScanReportIngestor implements PluginIngestor<SimplePluginDataRecord> 
 
     // ── Build the record ───────────────────────────────────────────────────
     Map<String, Object> fields = new LinkedHashMap<>();
+    fields.put("projectName", artifactName);
     fields.put("artifactName", artifactName);
     fields.put("artifactType", artifactType);
     fields.put("osFamily", osFamily);
