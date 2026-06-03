@@ -1,0 +1,19 @@
+description = 'OmniFlow plugin: Trivy vulnerability scan report viewer with severity analytics, vulnerability tracking, and embedded Next.js UI'
+
+tasks.named('buildUi') {
+  inputs.dir("${projectDir}/ui/components")
+  inputs.dir("${projectDir}/ui/lib")
+}
+
+jar {
+  archiveBaseName = 'trivy-scan-report'
+  manifest {
+    attributes(
+      'Plugin-Id'         : 'trivy-scan-report',
+      'Plugin-Version'    : project.version,
+      'Plugin-Api-Version': '0.1',
+      'Plugin-Class'      : 'io.github.agnistack.omniflow.plugins.trivy.TrivyScanReportPlugin',
+      'Implementation-Version': project.version
+    )
+  }
+}
