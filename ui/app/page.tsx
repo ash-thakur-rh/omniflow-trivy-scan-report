@@ -96,7 +96,7 @@ function Overview() {
         <StatCard label="Low" value={totalLow} />
         <StatCard label="Fixable" value={totalFixable}
           sub={`of ${totalVulns}`}
-          tone={totalFixable > 0 ? 'info' : 'neutral'} />
+          tone={totalFixable > 0 ? 'success' : 'neutral'} />
       </div>
 
       {/* Charts row */}
